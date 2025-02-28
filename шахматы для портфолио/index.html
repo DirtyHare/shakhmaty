@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шахматы с ИИ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="helper" id="helper">
+            <h2>Помощник для Аи</h2>
+            <p id="helper-text">Брось кубик, чтобы выбрать сторону!</p>
+        </div>
+        <div class="chess-wrapper">
+            <div class="numbers-left" id="numbers-left"></div>
+            <div class="board-container">
+                <div class="letters-top" id="letters-top"></div>
+                <div class="board" id="chessboard"></div>
+                <div class="letters-bottom" id="letters-bottom"></div>
+            </div>
+            <div class="numbers-right" id="numbers-right"></div>
+        </div>
+        <button id="dice-button" onclick="rollDice()">Бросить кубик</button>
+        <button onclick="resetGame()">Новая игра</button>
+        <div class="dice-result" id="dice-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
